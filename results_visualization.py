@@ -1032,7 +1032,7 @@ class ResultsVisualization:
             figure.update_layout    (xaxis_title="Value", yaxis_title="Density", width=1100, height=700)
             figure.show             ()
 
-    def plot_mahalanobis_distance_distribution_assuming_reliability(self, dataset):
+    def plot_mahalanobis_distance_distribution_assuming_gaussianity(self, dataset):
         mahalanobis_distance          =     self._evaluation[dataset]["Gaussianity"]["Mahalanobis distance"         ]
         quantile_mahalanobis_distance =     self._evaluation[dataset]["Gaussianity"]["Quantile Mahalanobis distance"]
         log_likelihood                =     self._evaluation[dataset]["Gaussianity"]["Log likelihood"               ]
